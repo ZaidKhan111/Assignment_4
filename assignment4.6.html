@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f45d4dd5ca.js" crossorigin="anonymous"></script>
+
+    <title>Assignment-4.6</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .d1 {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            padding: 2px;
+        }
+
+        .left {
+            width: 25%;
+            height: 100%;
+            background-color: rgb(35, 108, 126);
+            border-top-right-radius: 100px;
+        }
+
+        .l-top {
+            height: 15%;
+            color: whitesmoke;
+            font-size: x-large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .l-middle {
+            padding: 20px;
+            height: 75%;
+        }
+
+        .button {
+            background-color: transparent;
+            color: white;
+            font-size: 20px;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            text-align: start;
+            border-radius: 10px;
+        }
+
+        .icon {
+            font-size: larger;
+        }
+
+        .button:hover {
+            background-color: rgb(5, 39, 90);
+        }
+
+        .l-bottom {
+            height: 10%;
+            padding: 20px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            position: fixed;
+            bottom: 10px;
+            left: 20px;
+        }
+
+        .p1 {
+            font-size: 15px;
+            color: white;
+            position: fixed;
+            bottom: 25px;
+            left: 80px;
+        }
+
+        .right {
+            width: 75%;
+            height: 100%;
+            padding: 25px;
+        }
+
+        .r-top,
+        .r-middle,
+        .r-bottom {
+            width: 95%;
+            height: 26%;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 14px;
+        }
+
+        .dimension {
+            width: 31%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px -1px rgba(0, 0, 0, 0.75);
+            background-size: cover
+        }
+
+        .top-box1 {
+            background-image: url("images/car1.jpeg");
+        }
+
+        .top-box2 {
+            background-image: url("images/car2.jpg");
+        }
+
+        .top-box3 {
+            background-image: url("images/car3.avif");
+        }
+
+
+        .middle-box1 {
+            background-image: url("images/hayabusa.jpg");
+        }
+
+        .middle-box2 {
+            background-image: url("images/bike2.webp");
+        }
+
+        .middle-box3 {
+            background-image: url("images/bike3.jpg");
+        }
+
+
+        .bottom-box1 {
+            background-image: url("images/house1.webp");
+        }
+
+        .bottom-box2 {
+            background-image: url("images/house2.jpg");
+        }
+
+        .bottom-box3 {
+            background-image: url("images/house3.jpg");
+        }
+
+        .dimension:hover {
+            transform: scale(1.05);
+            transition-duration: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        <div class="left">
+            <div class="l-top">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="l-middle">
+                <a href="#"><button class="button"><i class="fa-regular fa-house icon"></i> Home</button></a>
+                <a href="#"><button class="button"><i class="fa-regular fa-circle-down icon"></i> Download</button></a>
+                <a href="#"><button class="button"><i class="fa-regular fa-star icon"></i> Favourites</button></a>
+                <a href="#"><button class="button"><i class="fa-solid fa-gear icon"></i> Setting</button></a>
+            </div>
+            <div class="l-bottom">
+                <img src="images/my-pic.jpg">
+                <P class="p1"> Zaid Khan</P>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Favourites</h1><br>
+            <h2>Cars</h2>
+            <div class="r-top">
+                <div class="top-box1 dimension"></div>
+                <div class="top-box2 dimension"></div>
+                <div class="top-box3 dimension"></div>
+            </div>
+            <h2>Bikes</h2>
+            <div class="r-middle">
+                <div class="middle-box1 dimension"></div>
+                <div class="middle-box2 dimension"></div>
+                <div class="middle-box3 dimension"></div>
+            </div>
+            <h2>Houses</h2>
+            <div class="r-bottom">
+                <div class="bottom-box1 dimension"></div>
+                <div class="bottom-box2 dimension"></div>
+                <div class="bottom-box3 dimension"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
